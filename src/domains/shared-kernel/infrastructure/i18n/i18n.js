@@ -1,10 +1,4 @@
-/**
- * i18n configuration for internationalization support
- * Supports English (EN) and Spanish (ES) languages
- *
- * @summary Configures Vue-i18n with locale files and language switching
- * @author Anderson Ventosilla
- */
+
 
 import { createI18n } from 'vue-i18n'
 import en from './locales/en.json'

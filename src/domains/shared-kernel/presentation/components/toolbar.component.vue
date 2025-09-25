@@ -1,11 +1,4 @@
-<!-- eslint-disable vue/multi-word-component-names -->
-/**
- * Toolbar component for the main navigation
- * Displays logo, institution name, and language switcher
- *
- * @summary Main toolbar with branding and language selection
- * @author Anderson Ventosilla
- */
+
 
 <template>
   <pv-toolbar>

@@ -1,11 +1,3 @@
-/**
- * Main application entry point
- * Configures Vue 3 app with PrimeVue, i18n and routing
- *
- * @summary Application bootstrap with all required plugins and configurations
- * @author Anderson Ventosilla
- */
-
 import './assets/main.css'
 import { createApp } from 'vue'
 import App from './App.vue'
