@@ -1,0 +1,38 @@
+{
+  "toolbar": {
+    "institutionName": "OpenTripMap World Explorer",
+    "language": {
+      "english": "EN",
+      "spanish": "ES"
+    }
+  },
+  "home": {
+    "title": "Bienvenido a OpenTripMap World Explorer",
+    "subtitle": "Descubre destinos increíbles alrededor del mundo",
+    "exploreButton": "Explorar Destinos"
+  },
+  "destinations": {
+    "title": "Principales Destinos",
+    "filterLabel": "Filtrar por categoría:",
+    "allCategories": "Todas las Categorías",
+    "seeDetails": "Ver Detalles",
+    "noResults": "No se encontraron destinos para esta categoría",
+    "categories": {
+      "tourism": "Turismo",
+      "natural": "Natural",
+      "historic": "Histórico",
+      "cultural": "Cultural",
+      "entertainment": "Entretenimiento",
+      "sport": "Deporte",
+      "religion": "Religión"
+    }
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 OpenTripMap World Explorer, inc. Todos los derechos reservados.",
+    "developed": "Desarrollado por Anderson Ventosilla."
+  },
+  "common": {
+    "loading": "Cargando...",
+    "error": "Ocurrió un error al cargar los datos"
+  }
+}
