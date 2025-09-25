@@ -1,35 +1,48 @@
-# pc1-appsweb
+# OpenTripMap World Explorer
 
-This template should help get you started developing with Vue 3 in Vite.
+OpenTripMap World Explorer is a global initiative that seeks to democratize access to cultural and touristic information from around the world.  
+This web application consumes open data sources (OpenStreetMap, Wikidata, Wikipedia) and provides users with key information about iconic touristic destinations.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🌍 Description
+This project is a **web application** developed with **JavaScript** and **Vue.js**.  
+It displays a list of worldwide top destinations, offering filtering by categories and detailed access to information via Wikipedia links.
 
-## Customize configuration
+---
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## ✨ Features
+- **Toolbar**:
+    - Left: Institution logo (via Clearbit Logo API) + institution name.
+    - Right: Language selector buttons (**EN | ES**) to switch between English and Spanish.
 
-## Project Setup
+- **Top Destinations Section**:
+    - Displays cards with key touristic places (name, category, distance, info URL, and image).
+    - If no image is available, a placeholder is shown.
 
-```sh
-pnpm install
-```
+- **Filter by Category**:
+    - Allows users to filter destinations by category.
 
-### Compile and Hot-Reload for Development
+- **Details Access**:
+    - A “See Details” button opens the place’s Wikipedia page (new browser tab).
 
-```sh
-pnpm dev
-```
+- **Footer**:
+    - Line 1: `Copyright © 2025 OpenTripMap World Explorer, Inc. All rights reserved.`
+    - Line 2: `Developed by [Developer Info]`
 
-### Compile and Minify for Production
+---
 
-```sh
-pnpm build
-```
+## 📦 Dependencies
+- [Vue.js](https://vuejs.org/)
+- [JavaScript ES6+]
+- [Clearbit Logo API](https://clearbit.com/logo)
+- [OpenTripMap Mock API](https://68d448d6214be68f8c68eb21.mockapi.io/api/v1/places)
 
-### Lint with [ESLint](https://eslint.org/)
+---
 
-```sh
-pnpm lint
-```
+## 👨‍💻 Author
+- **Developer Code:** 20250001
+- **Name:** Anderson Ventosilla
+
+---
+
