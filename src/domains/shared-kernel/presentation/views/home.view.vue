@@ -1,19 +1,10 @@
-<!-- eslint-disable vue/multi-word-component-names -->
-/**
- * Home view component
- * Welcome page with navigation to destinations
- *
- * @summary Home page as per requirements
- * @author Anderson Ventosilla
- */
-
 <template>
-  <div class="flex flex-column align-items-center justify-content-center" style="min-height: 60vh;" role="main" aria-labelledby="home-title">
-    <div class="text-center p-6 max-w-30rem">
-      <h1 id="home-title" class="text-4xl font-bold text-primary mb-4">
+  <div class="flex align-items-center justify-content-center p-8" style="min-height: 70vh;" role="main" aria-labelledby="home-title">
+    <div class="text-center max-w-30rem">
+      <h1 id="home-title" class="text-5xl font-bold text-primary mb-5">
         {{ $t('home.title') }}
       </h1>
-      <p class="text-xl text-color-secondary mb-5 line-height-3">
+      <p class="text-xl text-color-secondary mb-6 line-height-3">
         {{ $t('home.subtitle') }}
       </p>
       <pv-button
@@ -21,7 +12,7 @@
         size="large"
         @click="navigateToDestinations"
         :aria-label="$t('home.exploreButton')"
-        class="px-4 py-3"
+        class="px-6 py-3 text-lg"
       />
     </div>
   </div>

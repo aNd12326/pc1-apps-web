@@ -30,7 +30,7 @@ const navigateTo = (view) => {
     <Toolbar />
 
     <!-- Main Content Area -->
-    <main class="flex-1 w-full max-w-screen-xl mx-auto" role="main">
+    <main class="flex-1 w-full" role="main">
       <!-- Home View -->
       <HomeView
         v-if="currentView === 'home'"
@@ -38,10 +38,11 @@ const navigateTo = (view) => {
       />
 
       <!-- Destinations View -->
-      <DestinationsView
-        v-if="currentView === 'destinations'"
-        @navigate-to-home="navigateTo('home')"
-      />
+      <div v-if="currentView === 'destinations'" class="max-w-screen-xl mx-auto">
+        <DestinationsView
+          @navigate-to-home="navigateTo('home')"
+        />
+      </div>
     </main>
 
     <!-- Footer -->

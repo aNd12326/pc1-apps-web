@@ -1,12 +1,3 @@
-<!-- eslint-disable vue/multi-word-component-names -->
-/**
- * Destinations view component
- * Displays touristic places with filtering by category
- *
- * @summary Top Destinations view with filtering as per requirements
- * @author Anderson Ventosilla
- */
-
 <template>
   <div class="p-4" role="main" aria-labelledby="destinations-title">
     <!-- Header -->

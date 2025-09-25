@@ -1,11 +1,3 @@
-/**
- * Place card component for displaying touristic destination information
- * Uses PrimeVue Card component with Material Design styling
- *
- * @summary Place card with image, details and actions using PrimeVue
- * @author Anderson Ventosilla
- */
-
 <template>
   <pv-card class="h-full" role="article" :aria-label="`Place: ${place.name}`">
     <template #header>
@@ -60,9 +52,6 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
-/**
- * Component props
- */
 const props = defineProps({
   place: {
     type: Object,
@@ -88,9 +77,6 @@ const getImageUrl = () => {
   return placeholderImage.value
 }
 
-/**
- * Gets formatted distance with fallback
- */
 const getFormattedDistance = () => {
   if (props.place.getFormattedDistance) {
     return props.place.getFormattedDistance()
@@ -102,27 +88,15 @@ const getFormattedDistance = () => {
   return `${(distance / 1000).toFixed(1)} km`
 }
 
-/**
- * Gets category label with fallback
- */
 const getCategoryLabel = () => {
-  const category = props.place.category || 'Tourism'
-  // Just return the category as received from API, properly formatted
+  const category = props.place.category || 'category'
   return category
 }
 
-/**
- * Handles image loading error by showing placeholder
- * @param {Event} event - Error event
- */
 const onImageError = (event) => {
   event.target.src = placeholderImage.value
 }
 
-/**
- * Opens place details in new tab
- * Opens Wikipedia page for the place
- */
 const openDetails = () => {
   const url = props.place.infoUrl || 'https://wikipedia.org'
   window.open(url, '_blank', 'noopener,noreferrer')
